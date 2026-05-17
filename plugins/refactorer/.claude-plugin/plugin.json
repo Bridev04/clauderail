@@ -1,0 +1,10 @@
+{
+  "name": "refactorer",
+  "description": "Safe refactoring with tests as a safety net. Never mixes refactoring with behavior changes.",
+  "author": {
+    "name": "Bridev04"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Bridev04/clauderail",
+  "repository": "https://github.com/Bridev04/clauderail"
+}

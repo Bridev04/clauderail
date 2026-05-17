@@ -1,0 +1,10 @@
+{
+  "name": "setupclauderail",
+  "description": "Bootstrap clauderail in any project. Copies agents, commands, skills, hooks, rules, and CLAUDE.md into .claude/ from the bundled template.",
+  "author": {
+    "name": "Bridev04"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Bridev04/clauderail",
+  "repository": "https://github.com/Bridev04/clauderail"
+}

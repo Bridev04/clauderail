@@ -1,0 +1,10 @@
+{
+  "name": "debugger",
+  "description": "Systematic bug isolation: reproduce, trace root cause, fix, add regression test.",
+  "author": {
+    "name": "Bridev04"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Bridev04/clauderail",
+  "repository": "https://github.com/Bridev04/clauderail"
+}

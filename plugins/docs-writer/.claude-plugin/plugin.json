@@ -1,0 +1,10 @@
+{
+  "name": "docs-writer",
+  "description": "Writes and updates documentation from source code. Accurate, no hallucinated APIs.",
+  "author": {
+    "name": "Bridev04"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Bridev04/clauderail",
+  "repository": "https://github.com/Bridev04/clauderail"
+}

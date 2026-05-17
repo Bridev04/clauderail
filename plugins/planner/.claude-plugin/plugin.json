@@ -1,0 +1,10 @@
+{
+  "name": "planner",
+  "description": "Breaks complex tasks into ordered, dependency-aware implementation steps.",
+  "author": {
+    "name": "Bridev04"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Bridev04/clauderail",
+  "repository": "https://github.com/Bridev04/clauderail"
+}

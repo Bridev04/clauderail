@@ -1,0 +1,63 @@
+{
+  "name": "clauderail",
+  "owner": {
+    "name": "Bridev04"
+  },
+  "description": "Opinionated Claude Code starter pack: CLAUDE.md, agents, commands, skills, hooks, and MCP config. Install everything with /setupclauderail or pick individual agents.",
+  "plugins": [
+    {
+      "name": "setupclauderail",
+      "source": "./plugins/setupclauderail",
+      "description": "Bootstrap clauderail in any project: agents, commands, skills, hooks, rules, and CLAUDE.md installed in one command.",
+      "license": "MIT"
+    },
+    {
+      "name": "code-reviewer",
+      "source": "./plugins/code-reviewer",
+      "description": "Reviews code for real bugs: logic errors, race conditions, unhandled edge cases. Skips style nitpicks.",
+      "license": "MIT"
+    },
+    {
+      "name": "debugger",
+      "source": "./plugins/debugger",
+      "description": "Systematic bug isolation: reproduce, trace root cause, fix, add regression test.",
+      "license": "MIT"
+    },
+    {
+      "name": "dependency-auditor",
+      "source": "./plugins/dependency-auditor",
+      "description": "Audits dependencies for outdated packages, known CVEs, and unused imports.",
+      "license": "MIT"
+    },
+    {
+      "name": "docs-writer",
+      "source": "./plugins/docs-writer",
+      "description": "Writes and updates documentation from source code. Accurate, no hallucinated APIs.",
+      "license": "MIT"
+    },
+    {
+      "name": "planner",
+      "source": "./plugins/planner",
+      "description": "Breaks complex tasks into ordered, dependency-aware implementation steps.",
+      "license": "MIT"
+    },
+    {
+      "name": "refactorer",
+      "source": "./plugins/refactorer",
+      "description": "Safe refactoring with tests as a safety net. Never mixes refactoring with behavior changes.",
+      "license": "MIT"
+    },
+    {
+      "name": "security-auditor",
+      "source": "./plugins/security-auditor",
+      "description": "OWASP-style review: injection, auth flaws, data exposure, weak crypto. Severity-ranked.",
+      "license": "MIT"
+    },
+    {
+      "name": "test-engineer",
+      "source": "./plugins/test-engineer",
+      "description": "Writes comprehensive tests covering happy path, edge cases, errors, and concurrency.",
+      "license": "MIT"
+    }
+  ]
+}

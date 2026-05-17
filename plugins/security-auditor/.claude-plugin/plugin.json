@@ -1,0 +1,10 @@
+{
+  "name": "security-auditor",
+  "description": "OWASP-style review: injection, auth flaws, data exposure, weak crypto. Severity-ranked.",
+  "author": {
+    "name": "Bridev04"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Bridev04/clauderail",
+  "repository": "https://github.com/Bridev04/clauderail"
+}

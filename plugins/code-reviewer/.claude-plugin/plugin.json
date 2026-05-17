@@ -1,0 +1,10 @@
+{
+  "name": "code-reviewer",
+  "description": "Reviews code for real bugs: logic errors, race conditions, unhandled edge cases. Skips style nitpicks.",
+  "author": {
+    "name": "Bridev04"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Bridev04/clauderail",
+  "repository": "https://github.com/Bridev04/clauderail"
+}
