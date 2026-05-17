@@ -1,4 +1,4 @@
-# Claude Code starter pack
+# clauderail
 
 An opinionated `.claude/` starter pack for Claude Code: CLAUDE.md, settings with sensible permissions, hooks that actually block dangerous commands, eight focused subagents, thirteen slash commands that delegate properly, a curated skills library, MCP config, and CI.
 
@@ -51,15 +51,10 @@ CLAUDE.md                         # team operating instructions
 ## Install
 
 ```bash
-# From your repo root:
-cp -R path/to/claude-starter-pack/.claude ./.claude
-cp path/to/claude-starter-pack/CLAUDE.md ./CLAUDE.md
-cp path/to/claude-starter-pack/.mcp.json ./.mcp.json
-mkdir -p .github/workflows
-cp path/to/claude-starter-pack/.github/workflows/*.yml .github/workflows/
-
-chmod +x .claude/hooks/*.sh
+npx clauderail
 ```
+
+That copies `.claude/`, `CLAUDE.md`, `.mcp.json`, and `.github/workflows/` into your current directory and makes the hook scripts executable.
 
 Optional local overrides go in `.claude/settings.local.json` (gitignored). Use the example file as a starting point:
 
