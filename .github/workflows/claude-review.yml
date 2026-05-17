@@ -1,0 +1,36 @@
+name: Claude PR Review
+
+# Uses Anthropic's official action to run a Claude code review on every PR.
+# Requires ANTHROPIC_API_KEY in repository secrets.
+# To enable: add the secret, then this workflow runs automatically on PRs.
+# To disable: delete this file.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  claude-review:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history so Claude can diff against base
+
+      - name: Claude code review
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # The action will pick up CLAUDE.md and .claude/ from the repo
+          # automatically, including the code-reviewer subagent.
+          prompt: |
+            Review this pull request using the code-reviewer subagent defined
+            in .claude/agents/code-reviewer.md. Post findings as a single PR
+            comment grouped by severity. Focus on correctness, security,
+            regressions, and missing tests — not stylistic preferences.
